@@ -1,7 +1,7 @@
 body
 {
 	font-family: tahoma;
-	color: teal ;
+	color: #593825 ;
 	background-color: #D9D2BF;
 	margin-left: 75px;
 	margin-right: 75px;
@@ -22,14 +22,14 @@ h1, h2, h3
 a
 {
 	text-decoration: none;
-	color: lightseagreen;
+	color: #BF935E;
 	font-weight: bold;
 }
 
 a:hover
 {
 	text-decoration: underline;
-	color: mediumseagreen;
+	color: #BF7F30;
 }
 
 figure
