@@ -52,10 +52,10 @@ nav
 }
 
 table tr:nth-child(even) {
-background-color: brown;
+background-color: #DAA520;
 }
 
 table tr:nth-child(odd) {
-background-color: grey;
+background-color: #D2B48C;
 
 }
