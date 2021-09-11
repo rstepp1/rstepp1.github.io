@@ -54,5 +54,9 @@ nav
 
 table tr:nth-child(even) {
 background-color: #BF935E;;
-color: #BF7F30; 
+}
+
+table tr:nth-child(odd) {
+background-color: #BF7F30;;
+
 }
