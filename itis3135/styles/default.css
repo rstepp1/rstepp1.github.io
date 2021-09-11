@@ -38,6 +38,7 @@ figure
 	border: 1px black solid;
 	padding: 4px;
 	margin: auto;
+	
 }
 
 figcaption
@@ -53,10 +54,10 @@ nav
 }
 
 table tr:nth-child(even) {
-background-color: #BF935E;
+background-color: brown;
 }
 
 table tr:nth-child(odd) {
-background-color: #BF7F30;
+background-color: grey;
 
 }
