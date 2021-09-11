@@ -40,9 +40,18 @@ figure
 figcaption
 {
 	font-style: italic;
+	border: 1px black solid;
+	padding: 4px;
+	margin: auto;
+	
 }
 
 nav
 {
 	text-align: center;
+}
+
+table tr:nth-child(even) {
+background-color: #BF935E;;
+color: #BF7F30; 
 }
