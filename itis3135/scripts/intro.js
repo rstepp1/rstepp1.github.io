@@ -1,0 +1,12 @@
+var userName = prompt("Please input your name");
+var userFeels = prompt("How are you doing on this fine day");
+var today = new Date();
+var companyName = "Radiant Sea Urchin";
+document.write("Today is ");
+document.write(today.toDateString());
+document.write(", and the time is: ");
+document.write(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
+document.write("<br>");
+document.write("The " + companyName + " is happy to have you here, " + userName);
+document.write("<br>");
+document.write("We are glad you are doing " + userFeels);
