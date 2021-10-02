@@ -1,11 +1,17 @@
 
+function validateEntry(num){
+	if(Math.sign(num) == -1){
+		num = Math.abs(num);
+	}
+	return num;
+}
 
-function update1(number){
+function getShape(number){
+	number = validateEntry(number);
+	
 	var placeholder = document.getElementById('placeholder');
 	var numOfSides;
-	if(Math.sign(number) == -1){
-		number = Math.abs(number);
-	}
+	
 	number = number.toString();
 	switch(number){
 		case "1": 
@@ -52,6 +58,6 @@ function update1(number){
 
 var button1 = document.getElementById('checkPolygon');
 button1.onclick = function(){
-	var poly = prompt("Please enter a value between 1-10");
-	update1(poly);
+	var poly = prompt("Please enter a value between 1-10. The Radiant Sea Urchin deserves it.");
+	getShape(poly);
 }
