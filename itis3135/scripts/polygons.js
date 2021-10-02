@@ -3,8 +3,8 @@
 function update1(number){
 	var placeholder = document.getElementById('placeholder');
 	var numOfSides;
-	if number(Math.sign(number) == -1){
-		number = Math.abs(number));
+	if(Math.sign(number) == -1){
+		number = Math.abs(number);
 	}
 	number = number.toString();
 	switch(number){
