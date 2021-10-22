@@ -1,0 +1,95 @@
+body{
+	background-color: #F1F2F9;
+}
+		
+header{
+	margin-top: 50px;
+	text-align: center;
+}
+		
+nav{
+	text-align: center;
+}
+
+hr { 
+	color: #DCC48E;
+	width: 75%;
+} 
+
+h1, h2, h3{
+	font-family: Garamond;
+	text-align: center;
+	line-height: 0px;
+	color: #27233A;
+}
+		
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+ul li::before {
+	content: "\2022";  
+	color: C5C3E9;
+}
+
+div{
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+}
+
+button{
+	cursor: pointer;
+}
+
+a{
+	display:inline;
+	vertical-align:middle;
+}
+
+#slideshow{
+    width: 300px;
+    height:410px;
+    margin:50px auto;
+    box-shadow: 0px 0px 10px 3px grey;
+    position: relative;
+}
+
+div#slideshow { 
+	border: 1px solid grey; 
+	overflow: hidden; 
+}
+
+div#slideshow figure img { 
+	width: 20%; 
+	height:50%;  
+	float: left; 
+}
+
+div#slideshow figure { 
+	margin: 0;
+	position: relative;
+	width: 500%;
+}
+
+.vert-center{
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}	
+.last { 
+ text-align:center;
+    margin: 50px auto; 
+    position: relative; 
+    padding: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+.next { 
+text-align:center;
+    margin: 50px auto; 
+    position: relative; 
+    padding: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
