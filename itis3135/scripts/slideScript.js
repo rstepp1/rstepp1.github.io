@@ -3,13 +3,13 @@ $(document).ready(function(){
 		
 		$('.last').click(function(){
 
-			x= (x>=100)?(x-100):400;
+			x= (x>=100)?(x-100):500;
 			$('figure').css('left', -x+'%');
 		});
 		
 		$('.next').click(function(){
 
-			x= (x<=300)?(x+100):0;
+			x= (x<=400)?(x+100):0;
 			$('figure').css('left', -x+'%');
 		});
 
