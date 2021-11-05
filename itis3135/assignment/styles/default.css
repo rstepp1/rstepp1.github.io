@@ -1,0 +1,97 @@
+body {
+  font-family: "Didot", "Didot";
+   background-color: #ffffff;
+}
+
+.name{
+margin-left: 100px;
+margin-top: 75px;
+font-size: 30px;
+font-family: "Didot";
+color:#000000;
+}
+.small{
+	font-size: 15px;
+}
+.desc{
+	margin-left: 100px;
+	margin-top: -25px;
+	font-size: 12px;
+	font-family: "Didot";
+	color: #bbbbbb;
+}
+
+.nav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.nav a {
+  padding: 6px 6px 6px 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #3d3d3d;
+  display: block;
+}
+
+.nav a:hover {
+  color: #848484;
+}
+
+.container{
+	display:flex;
+	margin-top: 50px;
+}
+
+.contact{
+	text-align: center;
+	margin-right: 400px;
+}
+
+.about{
+	
+	margin-top: 50px;
+	font-size: 23px;
+}
+
+.info{
+	margin-left: 20px;
+	margin-right: 400px;
+}
+
+.sub{
+	font-size: 18px;
+}
+
+.main {	
+  margin-top: 100px;
+  margin-left: 600px; /* Same as the width of the sidenav */
+}
+
+.doc{
+	 margin-top: 100px;
+  margin-left: 830px;
+	margin-right: -215px;
+	border: 1px solid black;
+	text-align: center;
+	margin-right: -275px;
+	width: 425px;
+	height: 550px;
+}
+.center{
+ margin-right: 400px;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
+
+
