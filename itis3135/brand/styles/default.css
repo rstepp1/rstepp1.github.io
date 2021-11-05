@@ -31,7 +31,7 @@
 
 		ul li::before {
 			content: "\2022";  
-			color: C5C3E9;
+			color: #C5C3E9;
 		}
 		div{
 			text-align: center;
