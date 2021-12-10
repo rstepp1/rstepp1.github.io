@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andada+Pro">
+
 body {
-  font-family: "Didot", "Didot";
+
    background-color: #ffffff;
 }
 
@@ -11,6 +13,7 @@ font-size: 30px;
 font-family: "Didot";
 color:#000000;
 }
+
 .small{
 	font-size: 15px;
 }
@@ -50,6 +53,7 @@ color:#000000;
 .container{
 	display:flex;
 	margin-top: 50px;
+	font-family: "Andada Pro", sans-serif;
 }
 
 .contact{
@@ -64,8 +68,9 @@ color:#000000;
 }
 
 .info{
-	margin-left: 20px;
-	margin-right: 400px;
+	margin-top: 100px;
+	margin-left: 150px;
+	margin-right: 250px;
 }
 
 .sub{
@@ -73,13 +78,13 @@ color:#000000;
 }
 
 .main {	
-  margin-top: 100px;
-  margin-left: 600px; /* Same as the width of the sidenav */
+  margin-top: 60px;
+  margin-left: 400px; 
 }
 
 .doc{
-	 margin-top: 100px;
-  margin-left: 830px;
+	margin-top: 100px;
+	margin-left: 800px;
 	margin-right: -215px;
 	border: 1px solid black;
 	text-align: center;
@@ -95,5 +100,99 @@ color:#000000;
   .nav {padding-top: 15px;}
   .nav a {font-size: 18px;}
 }
+.check{
+	margin-left: 300px;
+}
 
 
+
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-carousel .my-card {
+  height: 768px;
+  width: 543px;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  background: #2e5266;
+  background: linear-gradient(to top, #2e5266, #6e8898);
+  transition: 1s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DCDCDC;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -4rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card:nth-child(0):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}

@@ -3,6 +3,7 @@
   <head>
     <title>Jenkins Portfolio</title>
 	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	
   </head>
   <body>
   <!-- navigator -->
@@ -13,19 +14,61 @@
         <a href="documents.html">documents</a>
         <a href="employments.html">employments</a>
         <a href="contact.html">contact</a>
-        <a href="upload.html">upload</a>
 		<a href="https://discord.com/channels/@me/596584811762548737/906312730456244244" style="font-size: 15px;margin-top: 5px;">instagram</a>
     </div>
-	<div class= "center"> 
+	<div class="check"> 
 	<!-- Heres where the documents go -->
-		<div class="doc"> <br>This is where documents go, (didnt realize he doesnt have a resume or other documents yet but he will make them soon)</div> 
-		<div class="doc"> <br>Document #2</div> 
-		<div class="doc"> <br>Document #3</div> 
-		<div class="doc"> <br>Document #4</div> 
+		<div class="card-carousel">
+			<div class="my-card"><img src="images/page1.jpg" alt="simon" style="width:543px;height:768px;" class="center"></div>
+			<div class="my-card"><img src="images/page2.jpg" alt="simon" style="width:543px;height:768px;" class="center"></div>
+			<div class="my-card"><img src="images/page3.jpg" alt="simon" style="width:543px;height:768px;" class="center"></div>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> 
+			<!-- Carousel Code provided by jquery plugin https://www.jqueryscript.net/slider/Smooth-Card-Carousel-jQuery-CSS3.html -->
+			<script>
+				$num = $('.my-card').length;
+				$even = $num / 2;
+				$odd = ($num + 1) / 2;
+
+				if ($num % 2 == 0) {
+					$('.my-card:nth-child(' + $even + ')').addClass('active');
+					$('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+					$('.my-card:nth-child(' + $even + ')').next().addClass('next');
+				} else {
+					$('.my-card:nth-child(' + $odd + ')').addClass('active');
+					$('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+					$('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+				}
+
+				$('.my-card').click(function() {
+					$slide = $('.active').width();
+					console.log($('.active').position().left);
+  
+					if ($(this).hasClass('next')) {
+						$('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+					} else if ($(this).hasClass('prev')) {
+						$('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+					}
+  
+					$(this).removeClass('prev next');
+					$(this).siblings().removeClass('prev active next');
+  
+					$(this).addClass('active');
+					$(this).prev().addClass('prev');
+					$(this).next().addClass('next');
+				});
+
+
+				// Keyboard nav
+				$('html body').keydown(function(e) {
+					if (e.keyCode == 37) { // left
+						$('.active').prev().trigger('click');
+					}
+					else if (e.keyCode == 39) { // right
+						$('.active').next().trigger('click');
+					}
+				});
+			</script>
 		</div>
-	<div class="main">
-	
-		<p class="contact" >Contact me through the contact page or at my email at sjenks42@uncc.edu</p>
 	</div>
   </body>
 </html>
