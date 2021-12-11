@@ -4,7 +4,13 @@ body {
 
    background-color: #ffffff;
 }
-
+label{
+	margin-bottom: 5px;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 18px;
+	font-family: "Andada Pro";	
+}
 
 .name{
 margin-left: 100px;
@@ -61,6 +67,11 @@ color:#000000;
 	margin-right: 400px;
 }
 
+.form-group{
+	text-align: left;
+	margin-bottom: 25px;
+}
+
 .about{
 	
 	margin-top: 50px;
@@ -79,7 +90,7 @@ color:#000000;
 
 .main {	
   margin-top: 60px;
-  margin-left: 400px; 
+  margin-left: 300px; 
 }
 
 .doc{
@@ -95,7 +106,10 @@ color:#000000;
 .center{
  margin-right: 400px;
 }
-
+.fixed-center{
+	align-items: center;
+	justify-content: center;
+}
 @media screen and (max-height: 450px) {
   .nav {padding-top: 15px;}
   .nav a {font-size: 18px;}
@@ -195,4 +209,53 @@ color:#000000;
   font-size: 3rem;
   font-weight: 300;
   color: #fff;
+}
+
+.your-field{
+	display: block;
+    width: 500px;
+    height: 25px;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #2c3e50;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #dce4ec;
+    border-radius: 4px;
+}
+
+.your-field.error {
+  border-color: red;
+}
+
+.your-field.mismatch {
+  border-color: orange;
+}
+
+.your-field.valid {
+  border-color: green;
+}
+
+.submit-btn{
+	
+	display: block;
+    width: 535px;
+	position: absolute;
+	cursor: pointer;
+	border: 2px solid transparent;
+	white-space: nowrap;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+
+form{
+	margin: 0 auto;
+	width: 500px;
+}
+.validity{
+	margin-top: 150px;
+	
 }
